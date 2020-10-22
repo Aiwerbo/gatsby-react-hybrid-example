@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
     <Route
-    path="/react-app"
+    exact path="/react-app/"
     render={() => (
       <div className="App">
       <header className="App-header">
@@ -23,17 +23,17 @@ function App() {
         >
           Learn React
         </a>
-        <Link to="/react-app-page2">Go to second react page</Link>
+        <Link to="/react-app/react-app-page2/">Go to second react page</Link>
       </header>
     </div>
     )}
      />
     <Route
-    path="/react-app-page2"
+    exact path="/react-app/react-app-page2/"
     render={() => (
       <div>
         <div>
-          <Link to="/react-app">Go to react page 1</Link>
+          <Link to="/react-app/">Go to react page 1</Link>
         </div>
         <div>
           <a href="/">Back to gatsby</a>
