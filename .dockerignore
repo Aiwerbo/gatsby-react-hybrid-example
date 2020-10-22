@@ -1,0 +1,6 @@
+react-app/.cache/
+react-app/node_modules/
+#react-app/public/
+gatsby-app/node_modules/
+gatsby-app/node_modules/
+#gatsby-app/public/
