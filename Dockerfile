@@ -15,6 +15,6 @@ WORKDIR /app/react-app
 RUN mv build ../gatsby-app/public/react-app
 FROM nginx 
 COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 80
+#EXPOSE 8080
 COPY --from=build-env /app/gatsby-app/public /usr/share/nginx/html
 #ENTRYPOINT ["nginx","-g","daemon off;"]
